@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 3</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <script type="module" defer src="./js/2-form.js"></script>
+    <a href="./index.html">Back</a>
+    <div class="form-container">
+      <form class="feedback-form" id="contact-form">
+        <label class="contact-form-label" for="email">Email</label>
+        <input
+          class="contact-form-input"
+          type="email"
+          id="email"
+          name="email"
+        />
+
+        <label class="contact-form-label" for="message">Message</label>
+        <textarea
+          class="contact-form-message"
+          id="message"
+          name="message"
+          rows="4"
+        ></textarea>
+
+        <button class="contact-form-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
