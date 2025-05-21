@@ -33,7 +33,7 @@ function createPromises(promiseState, delay) {
             if (promiseState === "fulfilled") {
                 res(delay);
             } else {
-                rej(del ay);
+                rej(delay);
             }
         }, delay);
     });
