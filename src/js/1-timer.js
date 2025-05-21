@@ -26,7 +26,7 @@ const options = {
         if (userDate < new Date()) {
             iziToast.error({
                 title: 'Error',
-                message: 'Illegal operation',
+                message: 'Please choose a date in the future.',
             });
 
             startButton.classList.remove("active-btn");
@@ -60,7 +60,6 @@ startButton.addEventListener("click", (e) => {
             clearInterval(timer)
             isActive = true;
             timeInput.removeAttribute("disabled");
-            startButton.classList.add("active-btn");
         }
         
         const { days, hours, minutes, seconds } = convertMs(timeDifference);
